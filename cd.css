@@ -1,0 +1,132 @@
+/* Estilo general */
+body {
+    background-color: #0a0a23;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: radial-gradient(circle, rgba(10,10,35,1) 0%, rgba(20,20,55,1) 50%, rgba(0,0,0,1) 100%);
+}
+
+/* Header */
+header {
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+/* Menú */
+nav {
+    margin-top: 20px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+}
+
+.menu-item {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    position: relative;
+}
+
+.menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Sección del formulario */
+#formulario {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.form-container {
+    background-color: rgba(20, 20, 20, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 100%;
+    box-shadow: 0 0 20px rgba(128, 0, 255, 0.5);
+}
+
+/* Estilo de las gráficas */
+.chart-container {
+    background-color: transparent;
+    margin: 20px 0;
+}
+
+.recomendaciones-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: none; /* Oculto hasta que se generen recomendaciones */
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilos del formulario */
+form h2 {
+    color: #d1b3ff;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #8000ff;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+input:focus, select:focus {
+    border: 2px solid #8000ff;
+}
+
+input[type="button"] {
+    background-color: #8000ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+input[type="button"]:hover {
+    background-color: #5900b3;
+}
+
+#enlaceBios, #enlaceInfo, #enlaceTurbo {
+    display: none;
+}
+
+/* Resaltar enlaces */
+a {
+    color: #d1b3ff;
+    text-decoration: underline;
+}
