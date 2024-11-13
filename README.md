@@ -1,2 +1,0 @@
-# Pagina
-Configuración BIOS.
