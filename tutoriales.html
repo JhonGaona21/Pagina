@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutoriales</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        ol {
+            list-style-type: decimal;
+            padding-left: 40px;
+            text-align: left;
+        }
+
+        ol li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            display: block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            width: 100%;
+            max-width: 500px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        #Inicio a {
+            text-decoration: none;
+            color: #333;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        #Inicio a:hover {
+            background-color: #ddd;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tutoriales de Configuración y Diagnóstico</h1>
+    </header>
+    <main>
+        <section id="Inicio">
+            <a href="index.html">Volver al Inicio</a>
+        </section>
+
+        <section id="bios">
+            <h2>¿Qué es la BIOS y cómo acceder?</h2>
+            <p>La BIOS es un sistema básico de entrada/salida que permite la comunicación entre el sistema operativo y el hardware de tu dispositivo. Aquí tienes los pasos para acceder y entender su función:</p>
+            <ol>
+                <li>Reinicia tu computadora.</li>
+                <li>Mientras se inicia, presiona repetidamente la tecla indicada (generalmente <b>F2</b>, <b>F10</b>, <b>Del</b> o <b>Esc</b>) para entrar en la BIOS.</li>
+            </ol>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/500x300?text=Acceso+BIOS" alt="Acceso a la BIOS">
+            </div>
+            <ol start="3">
+                <li>Una vez en la BIOS, navega cuidadosamente, ya que cualquier cambio puede afectar el rendimiento.</li>
+                <li>Consulta la sección "Sistema" o "Información" para ver detalles clave como CPU, RAM, y configuración de almacenamiento.</li>
+            </ol>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/500x300?text=Imagen+Bios" alt="Imagen de BIOS">
+            </div>
+            <a href="https://www.example.com/tutorial-bios" target="_blank">Ver video tutorial sobre la BIOS</a>
+        </section>
+
+        <section id="infoSistema">
+            <h2>Cómo encontrar información básica del sistema</h2>
+            <p>Conocer las especificaciones de tu sistema es clave para optimizar su rendimiento. Sigue estos pasos:</p>
+            <ol>
+                <li>En Windows, presiona <b>Win + R</b> y escribe <code>dxdiag</code>. Presiona Enter para abrir la herramienta de diagnóstico de DirectX.</li>
+            </ol>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/500x300?text=dxdiag" alt="Imagen de dxdiag">
+            </div>
+            <ol start="2">
+                <li>Consulta las pestañas de "Sistema" y "Pantalla" para información sobre CPU, GPU, RAM y otras especificaciones.</li>
+            </ol>
+            <a href="https://www.example.com/tutorial-info-sistema" target="_blank">Más información sobre especificaciones del sistema</a>
+        </section>
+
+        <section id="frecuenciaProcesador">
+            <h2>Frecuencia del Procesador</h2>
+            <p>La frecuencia del procesador indica la velocidad a la que puede ejecutar instrucciones. Sigue estos pasos para verla:</p>
+            <ol>
+                <li>Ve a "Administrador de tareas" (Ctrl + Shift + Esc) y haz clic en la pestaña de "Rendimiento".</li>
+            </ol>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/500x300?text=Administrador+de+tareas" alt="Administrador de tareas">
+            </div>
+            <ol start="2">
+                <li>Selecciona "CPU" y observa la frecuencia indicada en GHz.</li>
+            </ol>
+            <a href="https://www.example.com/tutorial-frecuencia-procesador" target="_blank">Ver tutorial de frecuencia del procesador</a>
+        </section>
+
+        <section id="ram">
+            <h2>Memoria RAM</h2>
+            <p>La RAM es crucial para el rendimiento en multitareas. Así puedes ver cuánta tienes instalada:</p>
+            <ol>
+                <li>En "Administrador de tareas", ve a la pestaña de "Rendimiento".</li>
+            </ol>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/500x300?text=RAM+en+Administrador+de+tareas" alt="RAM en Administrador de tareas">
+            </div>
+            <ol start="2">
+                <li>Haz clic en "Memoria" para ver la cantidad de RAM instalada y su uso actual.</li>
+            </ol>
+            <a href="https://www.example.com/tutorial-ram" target="_blank">Más sobre la memoria RAM</a>
+        </section>
+
+        <section id="turboBoost">
+            <h2>Estado del Turbo Boost</h2>
+            <p>Turbo Boost permite que el procesador funcione a velocidades superiores en momentos de alta demanda:</p>
+            <ol>
+                <li>En la BIOS, busca la opción de "Intel Turbo Boost" y verifica que esté activado.</li>
+            </ol>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/500x300?text=Intel+Turbo+Boost" alt="Intel Turbo Boost">
+            </div>
+            <ol start="2">
+                <li>Algunos dispositivos muestran el estado de Turbo Boost en el panel de control del CPU.</li>
+            </ol>
+            <a href="https://www.example.com/tutorial-turbo-boost" target="_blank">Tutorial sobre Turbo Boost</a>
+        </section>
+
+        <section id="disco">
+            <h2>Tipo y Velocidad del Disco</h2>
+            <p>Conocer si tienes un HDD o SSD es importante para el rendimiento. Sigue estos pasos:</p>
+            <ol>
+                <li>Presiona <b>Win + E</b> para abrir el Explorador de Archivos.</li>
+            </ol>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/500x300?text=Explorador+de+Archivos" alt="Explorador de Archivos">
+            </div>
+            <ol start="2">
+                <li>Haz clic derecho en "Este equipo" y selecciona "Administrar".</li>
+            </ol>
+            <a href="https://www.example.com/tutorial-disco" target="_blank">Más sobre discos HDD y SSD</a>
+        </section>
+
+        <section id="gpu">
+            <h2>Tipo de GPU (Integrada o Dedicada)</h2>
+            <p>La GPU es esencial para gráficos avanzados. Así puedes saber si es integrada o dedicada:</p>
+            <ol>
+                <li>Abre el "Administrador de tareas" y selecciona la pestaña de "Rendimiento".</li>
+            </ol>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/500x300?text=GPU+en+Administrador+de+tareas" alt="GPU en Administrador de tareas">
+            </div>
+            <ol start="2">
+                <li>Selecciona "GPU" para ver detalles sobre tu tarjeta gráfica.</li>
+            </ol>
+            <a href="https://www.example.com/tutorial-gpu" target="_blank">Ver tutorial sobre GPU</a>
+        </section>
+
+        <section id="refrigeracion">
+            <h2>Comprobar la refrigeración</h2>
+            <p>El rendimiento de tu CPU puede verse afectado si se sobrecalienta. Aquí te mostramos cómo verificar el estado de la refrigeración:</p>
+            <ol>
+                <li>Abre la "Herramienta de Monitoreo del Sistema" para ver las temperaturas de la CPU.</li>
+            </ol>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/500x300?text=Monitoreo+del+Sistema" alt="Monitoreo del Sistema">
+            </div>
+            <ol start="2">
+                <li>Revisa que la temperatura esté dentro de un rango seguro (normalmente por debajo de 80°C).</li>
+            </ol>
+            <a href="https://www.example.com/tutorial-refrigeracion" target="_blank">Aprende más sobre refrigeración</a>
+        </section>
+    </main>
+</body>
+</html>

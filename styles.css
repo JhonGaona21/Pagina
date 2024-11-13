@@ -1,0 +1,55 @@
+/* Estilo general */
+body {
+    background-color: #0a0a23;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: radial-gradient(circle, rgba(10,10,35,1) 0%, rgba(20,20,55,1) 50%, rgba(0,0,0,1) 100%);
+}
+
+/* Encabezado */
+header {
+    background-color: transparent;
+    padding: 20px;
+}
+
+/* Sección del Formulario */
+h1, h2 {
+    color: #ffffff;
+}
+
+section {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.form-container {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(128, 0, 255, 0.5);
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* Estilos de Inputs */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #8000ff;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+input[type="submit"] {
+    background-color: #8000ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}

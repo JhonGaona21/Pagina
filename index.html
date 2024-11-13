@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Recomendaciones de BIOS y Rendimiento</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Incluyendo Chart.js -->
+</head>
+<body>
+    <header>
+        <h1>Recomendaciones de BIOS y Rendimiento</h1>
+    </header>
+    <main>
+        <section id="tutoriales">
+            <h2>Accede a los Tutoriales</h2>
+            <p>Para obtener más detalles sobre la BIOS y el rendimiento de tu sistema, consulta los tutoriales a continuación.</p>
+            
+                <a href="tutoriales.html#bios">Tutoriales</a>
+            
+        </section>
+        <section id="inicio">
+            <h2>Formulario de Evaluación</h2>
+            <form id="dataForm">
+                <!-- Preguntas Generales -->
+                <label for="conocimientoBios">¿Conoces la BIOS?</label>
+                <select id="conocimientoBios" name="conocimientoBios" onchange="redirigirTutorial(this.value)">
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                </select>
+
+                <label for="tipoDispositivo">Tipo de dispositivo</label>
+                <select id="tipoDispositivo" name="tipoDispositivo">
+                    <option value="portatil">Portátil</option>
+                    <option value="escritorio">Escritorio</option>
+                </select>
+
+                <label for="tipoUso">Tipo de uso</label>
+                <select id="tipoUso" name="tipoUso">
+                    <option value="estudio">Estudio</option>
+                    <option value="trabajo">Trabajo</option>
+                    <option value="juegos">Juegos</option>
+                </select>
+
+                <label for="conocimientoSistema">¿Conoces la información básica del sistema?</label>
+                <select id="conocimientoSistema" name="conocimientoSistema" onchange="redirigirTutorial(this.value)">
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                </select>
+
+                <!-- Especificaciones del Sistema -->
+                <label for="frecuencia">Frecuencia del procesador (GHz)</label>
+                <input type="number" id="frecuencia" name="frecuencia" min="1" step="0.1">
+
+                <label for="nucleos">Número de núcleos</label>
+                <input type="number" id="nucleos" name="nucleos" min="1" step="1">
+
+                <label for="ram">Memoria RAM (GB)</label>
+                <input type="number" id="ram" name="ram" min="1">
+
+                <label for="turboBoost">Estado del Turbo Boost</label>
+                <select id="turboBoost" name="turboBoost">
+                    <option value="activado">Activado</option>
+                    <option value="desactivado">Desactivado</option>
+                </select>
+
+                <label for="disco">Velocidad del Disco</label>
+                <select id="disco" name="disco">
+                    <option value="hdd">HDD (RPM)</option>
+                    <option value="ssd">SSD</option>
+                </select>
+
+                <label for="gpu">GPU</label>
+                <select id="gpu" name="gpu">
+                    <option value="integrada">Integrada</option>
+                    <option value="dedicada">Dedicada</option>
+                </select>
+
+                <label for="refrigeracion">Estado de la Refrigeración</label>
+                <select id="refrigeracion" name="refrigeracion">
+                    <option value="bueno">Bueno</option>
+                    <option value="regular">Regular</option>
+                    <option value="malo">Malo</option>
+                </select>
+
+                <input type="submit" value="Generar Recomendaciones">
+            </form>
+        </section>
+
+        <section id="recomendaciones">
+            <h2>Recomendaciones Personalizadas</h2>
+            <p id="recomText"></p>
+
+            <h3>Gráficas de rendimiento:</h3>
+            <canvas id="graficoFrecuencia" width="400" height="200"></canvas>
+            <p id="recomendacionFrecuencia"></p>
+
+            <canvas id="graficoRAM" width="400" height="200"></canvas>
+            <p id="recomendacionRAM"></p>
+
+            <canvas id="graficoDisco" width="400" height="200"></canvas>
+            <p id="recomendacionDisco"></p>
+
+            <canvas id="graficoGPU" width="400" height="200"></canvas>
+            <p id="recomendacionGPU"></p>
+
+            <canvas id="graficoRefrigeracion" width="400" height="200"></canvas>
+            <p id="recomendacionRefrigeracion"></p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
